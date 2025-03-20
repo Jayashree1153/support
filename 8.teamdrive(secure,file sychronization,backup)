@@ -1,0 +1,35 @@
+Objective: 
+8. Secure File Synchronization & Backup Using TeamDrive 
+To demonstrate file synchronization, backup, multi-device access, and encryption using 
+TeamDrive. 
+Experiment Steps: 
+Step 1: TeamDrive Account Setup & Installation 
+1. Create a TeamDrive Account: 
+o Visit TeamDrive Registration and sign up. 
+o Verify your email and log in. 
+2. Install TeamDrive Client Software: 
+o Download TeamDrive Desktop Client and install it. 
+o Sign in with your credentials. 
+Step 2: File Synchronization & Backup 
+1. Create a New TeamDrive Space: 
+o Open TeamDrive and create a new space (folder) named “BackupTest”. 
+o Select a local folder to sync with the cloud. 
+2. Upload and Sync a File: 
+o Copy a test file (e.g., TestDoc.txt) into the BackupTest folder. 
+o Wait for TeamDrive to automatically upload and sync the file. 
+3. Verify File Synchronization on Another Device: 
+o Log in to TeamDrive Web App on another device. 
+o Check if the uploaded file appears in the BackupTest folder. 
+4. Modify a File & Check Version Control: 
+o Edit TestDoc.txt (add new text) and save it. 
+o Check if TeamDrive syncs the updated file. 
+o Explore Version History to restore an older version. 
+Step 3: Data Recovery & Encryption Analysis 
+1. Delete TestDoc.txt from the BackupTest folder. 
+2. Open TeamDrive Web App, go to Deleted Files, and restore TestDoc.txt. 
+3. Check Encryption Settings to verify end-to-end encryption is enabled. 
+Expected Outcome: 
+✅ Files sync automatically across devices. 
+✅ Version history allows restoring old file versions. 
+✅ Deleted files can be recovered. 
+✅ End-to-end encryption ensures secure file storage. 
