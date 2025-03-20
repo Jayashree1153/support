@@ -1,0 +1,43 @@
+23. Configuring Two-Factor Authentication (2FA) in TeamDrive to Enhance
+Security
+Objective: Learn how to enable and test Two-Factor Authentication (2FA) in TeamDrive for
+enhanced cloud storage security.
+Prerequisites:
+✅ Windows PC with TeamDrive installed (Download here)
+✅ TeamDrive account
+✅ Authenticator app (e.g., Google Authenticator, Microsoft Authenticator, or Authy) installed
+on a mobile device
+Experiment Steps
+Step 1: Install and Set Up TeamDrive
+1. Download and install the TeamDrive client on your Windows PC.
+2. Launch TeamDrive and sign in with your account.
+3. If you don’t have an account, create one using your email.
+Step 2: Enable Two-Factor Authentication (2FA)
+1. Open TeamDrive settings by clicking on your profile or security settings.
+2. Navigate to Security > Two-Factor Authentication.
+3. Click on Enable 2FA.
+4. A QR code or setup key will be displayed.
+Step 3: Configure 2FA Using an Authenticator App
+1. Open Google Authenticator (or your chosen authenticator app) on your mobile device.
+2. Tap Add Account > Scan QR Code (or enter the setup key manually).
+3. Your authenticator app will generate a 6-digit verification code.
+4. Enter the code in TeamDrive to verify and complete the setup.
+Step 4: Testing 2FA for Secure Login
+1. Sign out from TeamDrive.
+2. Attempt to log in again with your credentials.
+3. After entering your password, you will be prompted for a 2FA code.
+4. Open your authenticator app, enter the code, and verify successful login.
+Step 5: Backup and Recovery Options
+1. Go to the 2FA settings in TeamDrive.
+2. Save backup codes securely in case you lose access to your authenticator app.
+3. Test the backup codes by using one instead of the 2FA code.
+Testing and Verification
+✅ Login Security: Ensure that logging in now requires both a password and an authenticatorgenerated code.
+✅ Backup Code Test: Verify that backup codes work if you cannot access your mobile
+authenticator.
+✅ Unauthorized Access Prevention: Try logging in from another device without 2FA, ensuring
+access is denied.
+Expected Outcome:
+✅ Successfully enabled and tested Two-Factor Authentication (2FA) in TeamDrive.
+✅ Enhanced cloud storage security by adding an extra layer of authentication.
+✅ Verified backup codes and alternative login methods.
