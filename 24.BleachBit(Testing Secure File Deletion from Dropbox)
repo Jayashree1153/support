@@ -1,0 +1,34 @@
+24. Testing Secure File Deletion from Dropbox Cloud Storage Using BleachBit
+Objective: Learn how to securely delete files from Dropbox cloud storage using BleachBit,
+ensuring data cannot be recovered.
+Prerequisites:
+✅ Windows PC with Dropbox installed (Download here)
+✅ Dropbox account with some uploaded test files
+✅ BleachBit tool installed (Download here)
+Experiment Steps
+Step 1: Upload Test Files to Dropbox
+1. Open Dropbox (web or desktop client).
+2. Upload a test file (e.g., TestFile.txt).
+3. Ensure the file syncs with the cloud by checking Dropbox online.
+Step 2: Delete the File from Dropbox Normally
+1. Locate TestFile.txt in Dropbox.
+2. Right-click and select Delete.
+3. Go to Dropbox Trash and delete the file permanently.
+✅ Issue: Regular deletion only removes the reference to the file; data may still be recoverable.
+Step 3: Secure File Deletion Using BleachBit
+1. Open BleachBit on your Windows PC.
+2. Click File > Shred Files.
+3. Select your Dropbox folder (C:\Users\YourName\Dropbox).
+4. Choose the deleted file and click Shred.
+5. BleachBit will overwrite the file’s disk space, making recovery impossible.
+Step 4: Verify Secure Deletion
+1. Use file recovery software (e.g., Recuva) to check if the file can be recovered.
+2. If properly shredded, the file should not appear in the recovery scan.
+Testing and Verification
+✅ Check Dropbox Trash: Ensure the file is permanently deleted.
+✅ Run a file recovery scan: Verify that the file is irretrievable.
+✅ Check Dropbox sync: Ensure secure deletion does not affect other files.
+Expected Outcome:
+✅ Successfully shredded and securely deleted files from Dropbox.
+✅ Verified that deleted files are non-recoverable.
+✅ Ensured Dropbox continues normal operation after secure deletion.
