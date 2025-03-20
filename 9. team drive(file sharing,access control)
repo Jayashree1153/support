@@ -1,0 +1,22 @@
+9. Secure File Sharing & Access Control Using TeamDrive 
+To demonstrate secure file sharing, collaboration, and permission control using TeamDrive. 
+Experiment Steps: 
+Step 1: Create a Secure Shared Folder 
+1. Open TeamDrive Desktop Client or Web App. 
+2. Create a New Space (Shared Folder) named “ProjectDocs”. 
+3. Upload a test file (e.g., ProjectPlan.pdf) to the ProjectDocs folder. 
+Step 2: Invite Users & Set Access Permissions 
+1. Right-click on the “ProjectDocs” space and select “Invite Users”. 
+2. Enter the email address of another TeamDrive user. 
+3. Assign appropriate access permissions: 
+o Read-Only: User can view but not edit. 
+o Read & Write: User can view and edit. 
+o Full Control: User can modify, delete, and invite others. 
+Step 3: Test File Access Control 
+1. Log in as the invited user and check if ProjectPlan.pdf is accessible. 
+2. Modify the file (if permissions allow) and check if changes sync for all users. 
+3. Remove a user’s access and verify they can no longer access the file. 
+Expected Outcome: 
+✅ Users can securely collaborate on shared files. 
+✅ Permissions control who can edit or view documents. 
+✅ Revoked users lose access to files immediately.
