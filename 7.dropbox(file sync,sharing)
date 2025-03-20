@@ -1,0 +1,54 @@
+Objective: 
+7. File Synchronization & Sharing Using Dropbox 
+To demonstrate file synchronization, backup, multi-device access, and secure file sharing 
+using Dropbox. 
+Software & Tools Required: 
+ Dropbox Web Interface (https://www.dropbox.com/) 
+ Dropbox Desktop Application (Download here) 
+ Two devices for testing synchronization (e.g., Laptop + Mobile Phone) 
+Experiment Steps: 
+Step 1: Dropbox Account Setup & Installation 
+1. Create a Dropbox Account: 
+o Visit Dropbox Sign-Up Page. 
+o Enter name, email, and password, then click Sign Up. 
+o Verify your email by clicking the confirmation link sent to your inbox. 
+2. Download and Install Dropbox App (Optional but Recommended): 
+o Go to Dropbox Download Page. 
+o Download and install the Dropbox Desktop Application for your OS. 
+o Sign in to your Dropbox account after installation. 
+Step 2: File Synchronization Across Devices 
+1. Upload a File from the Web Interface: 
+o Log in to Dropbox Web. 
+o Click Upload Files and select a file (e.g., TestFile.txt). 
+o Wait for the upload to complete. 
+2. Verify Synchronization on Another Device: 
+o Open the Dropbox folder on your desktop (if installed). 
+o Check if the uploaded file (TestFile.txt) appears automatically. 
+o If using a mobile device, open the Dropbox mobile app and check if the file is available. 
+3. Modify the File on One Device & Sync the Changes: 
+o Open TestFile.txt from the Dropbox folder on your PC. 
+o Add some text (e.g., "Updated on PC") and save the file. 
+o Wait a few seconds, then check if the modified file is updated on Dropbox Web and 
+mobile app. 
+4. Delete a File and Restore It from Dropbox Version History: 
+o Delete TestFile.txt from your Dropbox folder on your desktop. 
+o Log in to Dropbox Web, go to Deleted Files, and click Restore. 
+o Check if the file reappears in your Dropbox folder. 
+Step 3: Secure File Sharing 
+1. Generate a Shareable Link: 
+o Right-click on TestFile.txt in Dropbox Web and select Share. 
+o Click Copy Link and share it with another user or test by opening it in an incognito 
+browser. 
+2. Set File Permissions for Security: 
+o In the Share settings, change permissions to: 
+ "Anyone with the link can view" (default). 
+ "Invite specific people" (only certain users can access). 
+ "Add password protection" (Premium feature). 
+3. Test File Access on a Different Device: 
+o Open the shared link on another device or browser. 
+o Verify if the file is accessible only to authorized users. 
+Expected Outcome: 
+✅ File synchronization works across devices in real time. 
+✅ Modified files are updated automatically. 
+✅ Deleted files can be recovered using version history. 
+✅ Secure file sharing with permission control.
