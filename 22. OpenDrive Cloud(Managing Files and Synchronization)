@@ -1,0 +1,43 @@
+22. Managing Files and Synchronization Using OpenDrive Cloud
+Objective: Learn how to upload, synchronize, and manage files securely using OpenDrive
+Cloud on Windows.
+Prerequisites:
+✅ Windows PC with an internet connection
+✅ OpenDrive account (Sign up here)
+✅ OpenDrive desktop application or web interface
+Experiment Steps
+Step 1: Install and Set Up OpenDrive
+1. Download the OpenDrive desktop app from the official website.
+2. Install the software and sign in with your OpenDrive account.
+3. You will see a new OpenDrive virtual drive in File Explorer.
+Step 2: Upload Files to OpenDrive
+1. Open the OpenDrive web interface or navigate to the OpenDrive virtual drive in File Explorer.
+2. Drag and drop a file or folder into OpenDrive.
+3. Wait for the upload process to complete.
+4. Verify that the file is visible in the OpenDrive web interface.
+Step 3: Enabling File Synchronization
+1. Open the OpenDrive desktop application.
+2. Navigate to Settings > Sync & Backup.
+3. Choose a local folder to sync with OpenDrive.
+4. Enable real-time synchronization and save settings.
+5. Test by adding a file to the local folder and checking if it appears in OpenDrive.
+Step 4: File Sharing and Access Control
+1. Select a file or folder in OpenDrive.
+2. Click on the Share option.
+3. Choose between Public Link or Private Access with Permissions.
+4. Copy the link and test it in another browser.
+5. Set an expiration date or password for additional security.
+Step 5: Downloading and Restoring Files
+1. Open the OpenDrive web interface or desktop app.
+2. Select a previously uploaded file.
+3. Click Download and save the file to your computer.
+4. Compare the file size and integrity with the original.
+Testing and Verification
+✅ Check if the uploaded file appears in both the OpenDrive web and desktop app.
+✅ Modify a synced file locally and verify that it updates automatically in OpenDrive.
+✅ Open a shared link in an incognito window and check accessibility.
+✅ Download a file and confirm that it is identical to the original.
+Expected Outcome:
+✅ Successfully uploaded, synchronized, and managed files in OpenDrive.
+✅ Verified file sharing and access control features.
+✅ Ensured data integrity and real-time synchronization.
