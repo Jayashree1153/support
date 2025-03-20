@@ -1,0 +1,33 @@
+25.Uploading, Downloading, and Sharing Files Using Icedrive
+Objective:
+To upload, download, and securely share files using Icedrive, a cloud storage service known for
+its built-in encryption and modern interface.
+Prerequisites:
+✅ Windows PC with an internet connection
+✅ Icedrive account (Sign up here)
+✅ Icedrive Web Interface (No software installation required)
+Experiment Steps
+Step 1: Create an Icedrive Account and Log In
+1. Go to Icedrive’s official website.
+2. Click Sign Up, enter your email and password, and create an account.
+3. Log in to Icedrive Web to access your cloud storage.
+Step 2: Upload a File to Icedrive
+1. Click the Upload button.
+2. Select a file from your computer (e.g., document.pdf).
+3. Click Open and wait for the file to be uploaded.
+Step 3: Download a File from Icedrive
+1. Locate the uploaded file in Icedrive.
+2. Click on the file and select Download.
+3. Open the downloaded file to verify its integrity.
+Step 4: Share a File Securely
+1. Right-click on the file and select Share.
+2. Copy the generated link and share it with others.
+3. (Optional) Enable password protection for secure file sharing.
+Testing and Verification
+✔ Successfully uploaded a file to Icedrive.
+✔ Verified file download and integrity.
+✔ Tested file sharing via secure link.
+Expected Outcome:
+✅ Users can store, download, and share files using Icedrive.
+✅ Files remain accessible and secure from any device.
+✅ Users understand basic cloud storage operations.
