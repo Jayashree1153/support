@@ -1,0 +1,73 @@
+10. Simulating and Detecting MITM (Man-in-the-Middle) Attacks on 
+Cloud Storage Traffic Using Wireshark 
+Objective: 
+To simulate a Man-in-the-Middle (MITM) attack on cloud storage traffic and detect it using 
+Wireshark. This experiment demonstrates how an attacker can intercept unencrypted cloud 
+storage communication and highlights the importance of TLS encryption and secure 
+authentication. 
+Tools & Software Required: 
+✅ Cloud Storage Service: Google Drive, Dropbox, or OneDrive 
+✅ Wireshark: For network traffic analysis (Download here) 
+✅ MITM Attack Tools: Ettercap (Linux) or Bettercap (Kali Linux) 
+✅ Virtual Machine (Optional): Kali Linux (Attacker System) 
+Experiment Setup 
+Step 1: Configure Cloud Storage for File Transfer 
+1. Create a Cloud Storage Account 
+o Sign up for Google Drive, Dropbox, or OneDrive. 
+o Install the desktop sync application on your system. 
+2. Upload and Download Files 
+o Upload a sample text file (e.g., “testfile.txt”) to the cloud. 
+o Download the same file to simulate data transmission over the network. 
+Step 2: Capture Cloud Storage Traffic Using Wireshark 
+1. Start Wireshark on the Victim Machine 
+o Open Wireshark and select the Wi-Fi or Ethernet interface. 
+o Click Start Capture to begin monitoring network packets. 
+2. Filter Cloud Traffic 
+o Use the following Wireshark filters to capture cloud storage traffic: 
+ Google Drive: tcp.port == 443 && ip.dst_host contains "google" 
+ Dropbox: tcp.port == 443 && ip.dst_host contains "dropbox" 
+ OneDrive: tcp.port == 443 && ip.dst_host contains "onedrive" 
+3. Observe Encrypted (HTTPS) and Unencrypted (HTTP) Traffic 
+o If HTTPS is used, the packets are encrypted. 
+o If unencrypted HTTP traffic is detected, it is vulnerable to MITM attacks. 
+Step 3: Simulate a MITM Attack Using Ettercap (Attacker System) 
+(Warning: Perform this experiment only in a controlled, ethical environment!) 
+1. Launch Kali Linux (or Linux system with Ettercap installed) 
+o Open a terminal and run: 
+bash 
+CopyEdit 
+sudo ettercap -G 
+o This opens Ettercap’s graphical interface. 
+2. Start ARP Spoofing to Intercept Victim’s Traffic 
+o Go to Hosts > Scan for Hosts and select the victim’s IP. 
+o Select MITM > ARP Poisoning and enable “Sniff Remote Connections.” 
+o Click Start Sniffing to intercept victim’s cloud storage traffic. 
+3. Monitor Intercepted Traffic in Wireshark 
+o On the attacker machine, run Wireshark to inspect captured packets. 
+o If the victim’s connection is unencrypted (HTTP), files and credentials can be extracted. 
+Step 4: Detect MITM Attack Using Wireshark on the Victim Machine 
+1. Look for Duplicate ARP Replies (ARP Spoofing Detection) 
+o In Wireshark, apply the filter: 
+bash 
+CopyEdit 
+arp.duplicate-address-detected 
+o If multiple devices claim to have the same MAC address, an ARP Poisoning attack is in 
+progress. 
+2. Analyze SSL/TLS Handshake Anomalies 
+o Apply the filter: 
+bash 
+CopyEdit 
+tls.handshake 
+o If an attacker performs SSL stripping, TLS encryption may be downgraded to HTTP, 
+making data vulnerable. 
+3. Check for Suspicious DNS Responses (DNS Spoofing Detection) 
+o Apply the filter: 
+bash 
+CopyEdit 
+dns && ip.src != your_DNS_server 
+o If DNS responses originate from an unknown source, a MITM attack is redirecting 
+traffic. 
+Expected Outcome: 
+✅ MITM attacks can intercept unencrypted cloud storage traffic. 
+✅ Wireshark detects ARP spoofing and SSL stripping. 
+✅ Secure cloud storage traffic (TLS-encrypted) remains unreadable by attackers.
