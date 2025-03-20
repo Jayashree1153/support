@@ -1,0 +1,50 @@
+Objective: 
+To explore different interfaces for accessing and interacting with Google Drive, including 
+proprietary software clients, browser interfaces, and APIs. 
+Software & Tools Required: 
+ Google Drive Account 
+ Google Drive for Desktop (Proprietary Software Client) 
+ Web Browser (Chrome/Firefox/Edge) 
+ Google Drive API (Using Python & Google Drive API) 
+Experiment Steps: 
+Step 1: Accessing Google Drive via Browser Interface 
+1. Open Google Drive in a web browser (drive.google.com). 
+2. Click “New” → “File Upload” to upload a test file. 
+3. Verify that the file is accessible and editable via the browser. 
+4. Try renaming, moving, and deleting the file using the browser interface. 
+Step 2: Using Proprietary Software Client (Google Drive for Desktop) 
+1. Install Google Drive for Desktop (Download here). 
+2. Open the app and sign in with your Google account. 
+3. Enable file synchronization by selecting a folder to sync. 
+4. Copy a file into the synced folder on your laptop and verify that it appears in Google Drive 
+(browser). 
+5. Modify the file from another device and check if it updates automatically on the laptop. 
+Step 3: Accessing Google Drive via API (Using Python) 
+1. Install Google Drive API library in Python: 
+bash 
+CopyEdit 
+pip install google-auth google-auth-oauthlib google-auth-httplib2 
+google-api-python-client 
+2. Authenticate with Google Drive API (follow Google API setup instructions). 
+3. Run a Python script to list files in Google Drive: 
+python 
+CopyEdit 
+from googleapiclient.discovery import build 
+from google.oauth2 import service_account 
+# Load credentials 
+SERVICE_ACCOUNT_FILE = 'path/to/your/service-account.json' 
+SCOPES = ['https://www.googleapis.com/auth/drive'] 
+creds = 
+service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_F
+ ILE, scopes=SCOPES) 
+drive_service = build('drive', 'v3', credentials=creds) 
+# List files 
+results = drive_service.files().list().execute() 
+files = results.get('files', []) 
+for file in files: 
+print(f"File: {file['name']}, ID: {file['id']}") 
+4. Run the script and verify that it lists the files in your Google Drive. 
+Expected Outcome: 
+ Browser Interface: Upload, manage, and edit files via the web. 
+ Proprietary Software Client: Automatic synchronization between local and cloud storage. 
+ API: Programmatic access to Google Drive for automation and file management. 
