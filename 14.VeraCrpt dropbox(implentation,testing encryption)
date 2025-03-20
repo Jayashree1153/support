@@ -1,0 +1,50 @@
+14. Implementing and Testing Encryption Before Uploading to Dropbox 
+Using VeraCrypt 
+Objective: 
+To encrypt files before uploading them to Dropbox using VeraCrypt, ensuring data security 
+and confidentiality, even if Dropbox storage is compromised. 
+Prerequisites 
+✅ VeraCrypt installed (Download here) 
+✅ Dropbox installed and synced on your PC 
+✅ Basic knowledge of encryption and cloud storage 
+Experiment Steps 
+Step 1: Install VeraCrypt and Dropbox 
+1. Download and install VeraCrypt from its official website. 
+2. Install and set up Dropbox on your PC. Ensure Dropbox Sync is enabled. 
+Step 2: Create an Encrypted File Container in Dropbox 
+1. Open VeraCrypt and click Create Volume. 
+2. Select Create an encrypted file container → Click Next. 
+3. Choose Standard VeraCrypt volume → Click Next. 
+4. Click Select File, navigate to your Dropbox folder, and name your encrypted container (e.g., 
+SecureData.tc). 
+5. Click Next. 
+Step 3: Configure Encryption Settings 
+1. Choose an encryption algorithm (AES recommended) and hash algorithm (SHA-512 
+recommended). 
+2. Click Next. 
+3. Specify the volume size (e.g., 500MB - 1GB for testing). 
+4. Set a strong password and click Next. 
+5. Select the Filesystem as NTFS or exFAT, then click Format. 
+Step 4: Mount and Use the Encrypted Volume 
+1. Click Select File, locate SecureData.tc in the Dropbox folder, and click Mount. 
+2. Enter the password, and the encrypted volume will be mounted as a virtual drive (e.g., E:). 
+3. Copy or move sensitive files into this virtual drive. 
+Step 5: Upload Encrypted Data to Dropbox 
+1. Once files are added, click Dismount in VeraCrypt. 
+2. Dropbox will now sync only the encrypted file (SecureData.tc), not individual unencrypted 
+files. 
+3. Check in the Dropbox web interface to confirm the encrypted file is uploaded. 
+Testing and Verification 
+1. Verify Data Security in Dropbox 
+ Try opening the uploaded SecureData.tc in Dropbox Web → It should be unreadable. 
+2. Test Data Recovery on Another Device 
+1. On another computer, download VeraCrypt and install Dropbox. 
+2. Download SecureData.tc from Dropbox Web or let it sync via the Dropbox desktop app. 
+3. Open VeraCrypt, select SecureData.tc, and click Mount. 
+4. Enter the password → Verify that the files are accessible. 
+Expected Outcome: 
+✅ Files are securely encrypted before Dropbox upload. 
+✅ Even if Dropbox is hacked, stolen, or compromised, the encrypted data remains 
+unreadable. 
+✅ Encrypted files can be securely downloaded and decrypted on any device with VeraCrypt 
+and the correct password.
