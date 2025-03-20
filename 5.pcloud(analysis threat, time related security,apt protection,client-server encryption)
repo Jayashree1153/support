@@ -1,0 +1,51 @@
+Objective: 
+5. Security Analysis of Cloud Storage Devices using pCloud 
+To analyze security threats, time-related aspects, advanced persistent threats (APT), and 
+client-server encryption in a cloud storage environment using pCloud, a secure cloud storage 
+provider with built-in encryption features. 
+Cloud Service Used: 
+✅ pCloud (Sign up for Free) 
+ Provides client-side encryption (with pCloud Crypto). 
+ Stores files in secure EU or US-based servers. 
+ Supports zero-knowledge encryption (for premium users). 
+Software & Tools Required: 
+ pCloud Web Interface 
+ pCloud Desktop App (for Client-Server Encryption Analysis) 
+ Wireshark (for Network Traffic Monitoring, optional) 
+Experiment Steps: 
+Step 1: Analysis of Cloud Storage Threats 
+1. Upload a file (confidential.txt) to pCloud. 
+2. Share the file using a public link and verify that anyone with the link can access it (potential 
+data leakage). 
+3. Enable password protection for the shared link and verify that unauthorized users cannot 
+access it. 
+Step 2: Time-Related Aspects of Cloud Security 
+1. Modify the uploaded file (confidential.txt) on your local system. 
+2. Observe how quickly pCloud synchronizes the changes across devices. 
+3. Check file version history in pCloud to see older versions of the file (important for rollback & 
+data recovery). 
+4. Test file expiration by setting an expiry date for a shared link and verify if access is revoked 
+automatically. 
+Step 3: Advanced Persistent Threat (APT) Simulation 
+1. Use an old password and attempt multiple failed logins → pCloud will lock the account 
+temporarily after multiple incorrect attempts (prevention of brute-force attacks). 
+2. Enable Two-Factor Authentication (2FA) under settings. 
+3. Try logging in from an unrecognized device → pCloud will prompt for extra verification. 
+4. Observe the login activity logs in pCloud for signs of suspicious access attempts. 
+Step 4: Client-Server Encryption Analysis 
+1. Upload a file to pCloud Crypto (if available) and verify that the file is encrypted locally before 
+upload. 
+2. Download Wireshark (optional) and monitor network traffic while uploading/downloading a 
+file. 
+o If encryption is enabled, you should see TLS-encrypted traffic instead of plaintext data. 
+3. Verify server-side encryption by checking pCloud’s security policy (data is stored in AES-256 
+encrypted format). 
+Expected Outcome: 
+✅ Threat Analysis: File sharing without security can lead to data leaks, but password protection 
+mitigates this risk. 
+✅ Time-Related Security: Cloud storage offers version history and automatic expiration for 
+shared links. 
+✅ APT Protection: Security features like login activity logs, 2FA, and account lockouts prevent 
+attacks. 
+✅ Client-Server Encryption: pCloud Crypto ensures end-to-end encryption, making files 
+unreadable on pCloud servers.
