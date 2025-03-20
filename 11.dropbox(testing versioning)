@@ -1,0 +1,33 @@
+11. Testing Versioning Features in Dropbox 
+To test and analyze file versioning in Dropbox, which allows users to recover previous versions 
+of a file after modifications or deletions. 
+Tools & Software Required: 
+✅ Dropbox Account (Free or Paid) 
+✅ Dropbox Web Interface or Desktop App 
+✅ A Text Editor (Notepad, VS Code, or Word) 
+Experiment Steps 
+Step 1: Upload an Initial File to Dropbox 
+1. Log in to Dropbox at https://www.dropbox.com/. 
+2. Click on Upload Files, select a text file (testfile.txt), and upload it. 
+3. Verify that the file appears in your Dropbox folder. 
+Step 2: Modify the File Multiple Times 
+1. Edit the file on your local machine. 
+o Add some text (e.g., “Version 2 - Updated content”) and save it. 
+2. Re-upload the file to Dropbox, replacing the existing version. 
+3. Repeat this process at least three times to create multiple file versions. 
+Step 3: Access File Version History 
+1. Locate the file in your Dropbox folder. 
+2. Right-click on the file and select Version history. 
+3. A list of all previous versions appears. Click on each version to preview or restore it. 
+Step 4: Restore an Older Version 
+1. In the Version history window, choose an older version of the file. 
+2. Click Restore to replace the latest version with the selected one. 
+3. Open the restored file and verify that it contains the older content. 
+Step 5: Test Deleted File Recovery 
+1. Delete the file from Dropbox. 
+2. Click on the Deleted files section in Dropbox. 
+3. Find the deleted file and click Restore to recover it. 
+Expected Outcome: 
+✅ Dropbox stores multiple versions of a file and allows users to restore previous versions. 
+✅ Users can recover deleted files within the retention period (30 days for free users, 180 days 
+for paid users).
