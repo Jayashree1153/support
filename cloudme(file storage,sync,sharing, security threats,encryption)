@@ -1,0 +1,47 @@
+Objective: 
+6. Cloud Security & Storage Analysis Using CloudMe 
+To analyze file storage, synchronization, sharing, security threats, and encryption 
+mechanisms using CloudMe, a cloud storage service that supports client-server encryption, 
+multi-device access, and file sharing. 
+Cloud Service Used: 
+✅ CloudMe (Sign up here) 
+ Provides cloud storage with synchronization across devices. 
+ Supports file sharing via links. 
+ Offers client-side encryption for enhanced security. 
+Software & Tools Required: 
+ CloudMe Web Interface 
+ CloudMe Desktop App (for synchronization and client-side encryption) 
+ Wireshark (optional, for transport security analysis) 
+Experiment Steps: 
+Step 1: File Storage & Synchronization 
+1. Create a CloudMe account and log in. 
+2. Install the CloudMe Desktop App on your computer. 
+3. Upload a test file (testfile.txt) to CloudMe via the web interface. 
+4. Verify that the file appears in the CloudMe folder on your desktop app, confirming 
+synchronization. 
+Step 2: File Sharing & Security Risks 
+1. Right-click on testfile.txt in the CloudMe web interface. 
+2. Select “Share” and generate a public link. 
+3. Try accessing the link from another browser or device without logging in. 
+4. Test security enhancement by adding a password to the shared link and verifying unauthorized 
+users cannot access it. 
+Step 3: Client-Server Encryption Analysis 
+1. Upload another file (confidential.docx) to CloudMe. 
+2. Open the CloudMe desktop app settings and enable encryption (if available). 
+3. Check if the file is encrypted before upload using a local encryption tool (e.g., VeraCrypt). 
+4. Download the file from another device and verify that it requires decryption before opening. 
+Step 4: Transport Security & Threat Analysis 
+1. Log in to CloudMe from different devices (PC, mobile). 
+2. Check if CloudMe uses HTTPS (SSL/TLS encryption) by observing the browser’s lock icon in the 
+URL bar. 
+3. (Optional) Use Wireshark to capture network packets and verify that file transfers are encrypted 
+in transit. 
+4. Attempt multiple failed logins to see if CloudMe locks the account (protection against brute
+force attacks). 
+Expected Outcome: 
+✅ File Synchronization: CloudMe ensures files are automatically updated across devices. 
+✅ Secure File Sharing: Password protection prevents unauthorized access. 
+✅ Client-Server Encryption: Ensures files remain private during upload/download. 
+✅ Transport Security: HTTPS encryption prevents eavesdropping. 
+✅ Threat Protection: CloudMe implements account security features against unauthorized 
+access.
