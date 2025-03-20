@@ -1,0 +1,34 @@
+Objective: 
+To demonstrate cloud storage optimization techniques (Deduplication, Delta Encoding, 
+Compression) using Dropbox, a widely used cloud storage service. 
+Software & Tools Required: 
+ Dropbox Account (Sign up here) 
+ Dropbox Desktop App (For Sync & Delta Encoding) 
+ Duplicati (For Backup & Deduplication) → Download Here 
+ 7-Zip / WinRAR (For Compression) 
+Experiment Steps: 
+Step 1: Deduplication in Dropbox 
+1. Upload a file (e.g., report.pdf) to Dropbox via the web or desktop app. 
+2. Duplicate the file on your local machine (copy_report.pdf). 
+3. Upload the duplicate file to Dropbox and observe that the upload completes instantly (Dropbox 
+does not store duplicate copies but creates a reference to the original). 
+4. Test with Duplicati: 
+o Install Duplicati and configure Dropbox as a backup destination. 
+o Backup the same file multiple times and verify that only one copy is stored due to 
+deduplication. 
+Step 2: Delta Encoding with Dropbox 
+1. Upload a large text file (data.txt) to Dropbox. 
+2. Modify only a small part of data.txt and save the changes. 
+3. Dropbox will not re-upload the entire file but only the changed portion using delta encoding. 
+4. Check Dropbox sync speed—it should be significantly faster compared to a full re-upload. 
+Step 3: File Compression Before Uploading 
+1. Select multiple large files (file1.txt, file2.txt, file3.txt). 
+2. Compress them into a ZIP archive using 7-Zip or WinRAR. 
+3. Upload both original and compressed versions to Dropbox. 
+4. Compare: 
+o Storage space used (compressed vs. uncompressed). 
+o Upload time for compressed vs. individual files. 
+Expected Outcome: 
+✅ Deduplication: Dropbox prevents redundant file storage. 
+✅ Delta Encoding: Only modified parts of a file are updated, saving bandwidth. 
+✅ Compression: Reduces storage space and speeds up file transfers.
