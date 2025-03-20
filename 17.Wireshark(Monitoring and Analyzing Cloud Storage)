@@ -1,0 +1,55 @@
+17. Monitoring and Analyzing Cloud Storage Traffic Using Wireshark
+Objective:
+To monitor and analyze cloud storage traffic using Wireshark on Windows, identifying security
+risks and traffic patterns.
+Prerequisites:
+✅ Windows PC with Admin Privileges
+✅ Wireshark Installed (Download here: https://www.wireshark.org/download.html)
+✅ A cloud storage account (e.g., Google Drive, OneDrive, Dropbox)
+✅ Some test files for upload and download
+Experiment Steps
+Step 1: Download and Install Wireshark
+1. Go to the official Wireshark website: https://www.wireshark.org/download.html.
+2. Download the Windows installer and run the setup.
+3. Follow the installation instructions and install the necessary network drivers (Npcap).
+4. Launch Wireshark after installation.
+Step 2: Select the Network Interface
+1. Open Wireshark and go to the Capture section.
+2. Select the network interface connected to the internet (e.g., Wi-Fi or Ethernet).
+3. Click the Start Capture button.
+Step 3: Capture Cloud Storage Traffic
+1. Open a cloud storage service (Google Drive, Dropbox, or OneDrive) in a web browser or
+desktop application.
+2. Upload a test file to the cloud storage.
+3. Download the same file from the cloud storage.
+4. While these actions take place, Wireshark captures the network packets.
+5. Click the Stop Capture button once the file transfer is complete.
+Step 4: Analyze the Captured Traffic
+1. Use the Filter Bar in Wireshark to focus on cloud storage traffic:
+o Google Drive: ip.addr == 172.217.0.0/16
+o Dropbox: ip.addr == 162.125.0.0/16
+o OneDrive: ip.addr == 13.107.0.0/16
+2. Apply HTTP and HTTPS filters:
+http || tls
+3. Identify key packet information:
+o Source and Destination IP Addresses
+o Protocols (TLS, HTTP, TCP)
+o Packet size and timing
+Step 5: Detect Security Issues
+1. Check for unencrypted traffic (HTTP instead of HTTPS).
+2. Identify potential data leaks or unexpected connections.
+3. Analyze traffic behavior for abnormal data transfers.
+Testing and Verification
+1. Identifying Cloud Storage Traffic Patterns
+✅ Observe the number of packets sent during upload vs. download.
+✅ Identify cloud service IPs from captured packets.
+2. Detecting Unsecured Data Transfers
+✅ Verify that traffic is encrypted using TLS protocol.
+✅ Look for any HTTP traffic, which may indicate security risks.
+3. Ensuring Proper Network Security Measures
+✅ Check if Multi-Factor Authentication (MFA) is in use.
+✅ Analyze logs for unauthorized access attempts.
+Expected Outcome:
+✅ Users can monitor cloud storage traffic effectively.
+✅ Security vulnerabilities, such as unencrypted data transmission, can be identified.
+✅ Understanding of cloud storage data flow and encryption techniques is improved
