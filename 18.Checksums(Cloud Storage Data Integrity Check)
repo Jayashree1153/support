@@ -1,0 +1,51 @@
+18. Conducting a Cloud Storage Data Integrity Check Using Checksums
+Objective:
+To verify data integrity before and after cloud storage upload/download using checksum tools
+such as HashCalc.
+Prerequisites:
+✅ Windows PC with Admin Privileges
+✅ HashCalc Installed (Download here: https://www.slavasoft.com/hashcalc/)
+✅ A cloud storage account (e.g., Google Drive, OneDrive, Dropbox)
+✅ A sample test file for integrity verification
+Experiment Steps
+Step 1: Download and Install HashCalc
+1. Go to the official HashCalc website: https://www.slavasoft.com/hashcalc/.
+2. Download the Windows installer and run the setup.
+3. Follow the installation instructions and complete the setup.
+4. Launch HashCalc after installation.
+Step 2: Generate Checksum for Original File
+1. Open HashCalc.
+2. Click the Browse button and select the sample test file.
+3. Choose a hashing algorithm (e.g., MD5, SHA-256, SHA-512).
+4. Click Calculate to generate the checksum.
+5. Note down the generated checksum for future comparison.
+Step 3: Upload File to Cloud Storage
+1. Log in to your cloud storage account (Google Drive, OneDrive, Dropbox, etc.).
+2. Upload the test file to the cloud.
+3. Ensure the upload completes successfully.
+Step 4: Download File from Cloud Storage
+1. Download the uploaded file from the cloud storage to your local system.
+2. Save it in a different location than the original file.
+Step 5: Generate Checksum for Downloaded File
+1. Open HashCalc again.
+2. Click the Browse button and select the downloaded file.
+3. Choose the same hashing algorithm used earlier.
+4. Click Calculate to generate the checksum.
+Step 6: Compare Checksums
+1. Compare the checksums of the original and downloaded files.
+2. If the checksums match, the file has not been altered.
+3. If the checksums differ, the file has been modified or corrupted during upload/download.
+Testing and Verification
+1. Ensuring Data Integrity
+✅ If both checksums match, data integrity is maintained.
+✅ If checksums do not match, investigate possible corruption or tampering.
+2. Testing with Different File Types
+✅ Repeat the process with text files, images, videos, and compressed files.
+✅ Observe any variations in checksum results.
+3. Checking for Potential Data Corruption
+✅ Try uploading/downloading files from different networks.
+✅ Verify if checksum differences occur in specific conditions.
+Expected Outcome:
+✅ Users can verify the integrity of files before and after cloud storage operations.
+✅ Corrupt or altered files can be detected using checksum verification.
+✅ Enhanced awareness of data security and integrity maintenance in cloud storage.
