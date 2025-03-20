@@ -1,0 +1,46 @@
+13. Recovering Deleted or Lost OneDrive Data Using Recuva 
+Objective: 
+To demonstrate how to recover permanently deleted or lost OneDrive files using Recuva, a 
+file recovery tool, when OneDrive is synced to a local computer. 
+Prerequisites: 
+✅ A Microsoft OneDrive account 
+✅ OneDrive desktop application installed & synced 
+✅ Recuva software (Download from Piriform) 
+✅ Windows PC with local OneDrive folder 
+Experiment Steps 
+Step 1: Setup OneDrive & Verify Sync 
+1. Ensure OneDrive is installed & logged in on your PC. 
+2. Check the local OneDrive folder (default location: C:\Users\YourName\OneDrive). 
+3. Upload test files (e.g., testfile.docx, testimage.jpg) to OneDrive and confirm they are 
+synced online. 
+Step 2: Delete Files for Recovery Testing 
+1. Delete a test file (testfile.docx) from the OneDrive folder. 
+2. Remove it permanently (Shift + Delete) instead of sending it to the Recycle Bin. 
+3. Verify deletion by checking online at OneDrive.com—the file should be removed. 
+Step 3: Install and Run Recuva 
+1. Download & Install Recuva from Piriform. 
+2. Open Recuva and select File Recovery Mode. 
+Step 4: Scan for Deleted OneDrive Files 
+1. Select file type (Documents, Images, or All Files). 
+2. Choose the location: 
+o Select the OneDrive folder: 
+bash 
+CopyEdit 
+C:\Users\YourName\OneDrive 
+3. Click Start Scan and wait for the results. 
+4. Analyze scan results: 
+o Green files → Fully recoverable. 
+o Yellow files → Partially recoverable (corrupted). 
+o Red files → Unrecoverable. 
+5. Select the file and click Recover. 
+6. Save the recovered file to a different location (not OneDrive). 
+Step 5: Verify OneDrive Sync & Restore 
+1. Move the recovered file back to the OneDrive folder. 
+2. Check if OneDrive re-uploads the file automatically. 
+3. Test OneDrive’s built-in version history feature: 
+o Right-click the file in OneDrive → View version history. 
+o Restore an older version if available. 
+Expected Outcome: 
+✅ Recuva should successfully recover recently deleted OneDrive files from local storage. 
+✅ If version history is enabled, older versions can be restored directly from OneDrive. 
+✅ If a file is overwritten, only partial recovery may be possible.
