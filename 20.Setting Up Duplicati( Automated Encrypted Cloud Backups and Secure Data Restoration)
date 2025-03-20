@@ -1,0 +1,56 @@
+20. Setting Up Duplicati for Automated Encrypted Cloud Backups and
+Secure Data Restoration
+Objective:
+To configure Duplicati for automatic encrypted cloud backups and test secure data restoration.
+Prerequisites:
+✅ Windows PC with Admin Privileges
+✅ Duplicati Installed (Download here)
+✅ A cloud storage account (Google Drive, Dropbox, OneDrive, etc.)
+✅ Encryption passphrase for securing backups
+Experiment Steps
+Step 1: Install Duplicati
+1. Download Duplicati from the official website: https://www.duplicati.com/download
+2. Run the installer and follow the on-screen instructions.
+3. After installation, open Duplicati from the Start Menu or System Tray.
+Step 2: Configure a New Backup Job
+1. Click Add Backup → Select Configure a new backup → Click Next.
+2. Backup Name: Enter a name for the backup job.
+3. Encryption: Choose AES-256 encryption and set a strong passphrase.
+4. Click Next.
+Step 3: Select Backup Storage Destination
+1. Choose a cloud storage provider (Google Drive, Dropbox, OneDrive, etc.).
+2. Authenticate Duplicati with the chosen cloud service.
+3. Select or create a folder to store backups.
+4. Click Test Connection to verify access.
+Step 4: Select Files and Folders to Backup
+1. Choose important folders for backup (e.g., Documents, Pictures, etc.).
+2. Exclude unnecessary files if needed.
+3. Click Next.
+Step 5: Set Backup Schedule and Retention Policy
+1. Configure the backup frequency (Daily, Weekly, Custom Schedule).
+2. Set retention policy (Keep all backups, Smart Retention, or Custom rules).
+3. Click Next.
+Step 6: Run and Monitor the Backup
+1. Click Save and Run Backup.
+2. Monitor progress in the Home Dashboard.
+3. Verify completion and check logs for errors.
+Step 7: Test Data Restoration
+1. Click Restore → Select the backup destination.
+2. Choose a backup version and select files to restore.
+3. Specify the restore location (Original or Custom folder).
+4. Click Restore and verify the integrity of restored files.
+Testing and Verification
+1. Verifying Backup Success
+✅ Check backup logs for completion status and errors.
+✅ Confirm encrypted files in the cloud storage folder.
+2. Ensuring Data Security
+✅ Verify that cloud backups cannot be accessed without the encryption passphrase.
+✅ Ensure backup integrity by restoring and comparing files.
+3. Checking Automated Backup Execution
+✅ Allow Duplicati to run scheduled backups.
+✅ Verify periodic logs to ensure consistency.
+Expected Outcome:
+✅ Automatic encrypted backups are stored securely in the cloud.
+✅ Data can be restored successfully with the correct passphrase.
+✅ Backup automation runs on schedule without manual intervention.
+✅ Enhanced data security through encryption and cloud storage.
