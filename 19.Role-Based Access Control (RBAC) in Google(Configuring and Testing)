@@ -1,0 +1,59 @@
+19. Configuring and Testing Role-Based Access Control (RBAC) in Google
+Drive
+Objective:
+To configure and test Role-Based Access Control (RBAC) and permission settings in Google
+Drive to ensure secure file access and management.
+Prerequisites:
+✅ Windows PC with Admin Privileges
+✅ A Google Drive account
+✅ A test folder and sample files for access control
+✅ Multiple Google accounts (or the ability to add users with different roles)
+Experiment Steps
+Step 1: Create a Folder for Testing RBAC
+1. Log in to your Google Drive account.
+2. Click on New → Folder and name it RBAC_Test_Folder.
+3. Upload a few sample files to the folder.
+Step 2: Identify Available Roles in Google Drive
+1. Google Drive offers different sharing roles:
+o Viewer: Can only view files
+o Commenter: Can view and comment on files
+o Editor: Can view, edit, and delete files
+o Owner: Full control, including managing roles
+Step 3: Assign Roles and Permissions
+1. Right-click the RBAC_Test_Folder and select Share.
+2. Enter test user email addresses.
+3. Assign different roles to different users:
+o User A → Viewer
+o User B → Editor
+o User C → Owner (if applicable)
+4. Click Send to share the folder.
+Step 4: Test Role-Based Access Control
+1. Log in as User A (Viewer) and attempt the following:
+o Open files (✅ Success)
+o Edit files (✅ Should be restricted)
+o Delete files (✅ Should be restricted)
+2. Log in as User B (Editor) and attempt:
+o Open files (✅ Success)
+o Edit files (✅ Success)
+o Delete files (✅ Success)
+3. Log in as User C (Owner) and attempt:
+o Open files (✅ Success)
+o Edit files (✅ Success)
+o Delete files (✅ Success)
+o Change permissions (✅ Success)
+Step 5: Modify and Revoke Permissions
+1. As the Owner, modify User B’s role from Editor to Viewer.
+2. Verify that User B can no longer edit files.
+3. Remove User A’s access and confirm that they cannot open the folder anymore.
+Testing and Verification
+1. Verifying Access Restrictions
+✅ Ensure that each user can only perform actions allowed by their assigned role.
+✅ Try to access the folder from an unauthorized account (should be denied).
+2. Checking Permission Changes in Real-Time
+✅ Modify permissions and check if they apply immediately.
+✅ Ensure revocation works as expected (User loses access after being removed).
+Expected Outcome:
+✅ Users only have access based on assigned roles.
+✅ Unauthorized actions are blocked as per RBAC settings.
+✅ Role changes and revocations take effect immediately.
+✅ Enhanced security by implementing fine-grained access controls
