@@ -1,0 +1,51 @@
+15. Implementing and Testing End-to-End Encryption in Cloud Storage 
+using Cryptomator 
+Objective: 
+To encrypt files before uploading them to a cloud storage service using Cryptomator and verify 
+the encryption effectiveness. 
+Prerequisites: 
+✅ Windows PC with Admin Privileges 
+✅ Cryptomator Installed (Download here: https://cryptomator.org/) 
+✅ A cloud storage account (e.g., Google Drive, OneDrive, Dropbox, etc.) 
+✅ Some test files to encrypt and upload 
+Experiment Steps 
+Step 1: Download and Install Cryptomator 
+1. Go to the official Cryptomator website: https://cryptomator.org/. 
+2. Download the Windows version of Cryptomator. 
+3. Run the installer and follow the on-screen instructions to complete the installation. 
+4. Open Cryptomator after installation. 
+Step 2: Create an Encrypted Vault 
+1. Click + Add Vault in the Cryptomator interface. 
+2. Select Create New Vault and choose a name for the vault (e.g., "SecureFiles"). 
+3. Choose a folder location where the encrypted vault will be stored. 
+o This should be inside your cloud storage folder (e.g., Google Drive, Dropbox, or 
+OneDrive). 
+4. Set a strong password for the vault (this password will be required to decrypt files). 
+5. Click Create Vault, then Unlock Vault to mount it as a virtual drive. 
+Step 3: Encrypt Files Using Cryptomator 
+1. After unlocking the vault, it will appear as a virtual drive in Windows Explorer. 
+2. Copy or move files into the Cryptomator virtual drive. 
+3. Close the Cryptomator window or click Lock Vault to encrypt the contents. 
+4. The files will now be securely encrypted within the cloud storage folder. 
+Step 4: Upload the Encrypted Vault to Cloud Storage 
+1. Ensure your cloud storage sync client (Google Drive, Dropbox, OneDrive) is running. 
+2. The encrypted Cryptomator vault will be automatically uploaded to the cloud. 
+3. Check your cloud storage to confirm the encrypted files are stored. 
+Step 5: Verify Encryption Effectiveness 
+1. Attempt to open the encrypted vault files directly from cloud storage (they should be 
+unreadable). 
+2. Try accessing the Cryptomator vault with an incorrect password (it should deny access). 
+3. Unlock the vault using Cryptomator and check if the original files are accessible. 
+Testing and Verification 
+1. Detecting Encryption Security 
+✅ Check if files inside the vault appear as unreadable when accessed from cloud storage. 
+✅ Ensure that the vault does not reveal original filenames or file contents. 
+✅ Confirm that only the correct Cryptomator password can decrypt the files. 
+2. User Awareness & Security Best Practices 
+✅ Use a strong, unique password for the Cryptomator vault. 
+✅ Backup the vault password securely (Cryptomator does not provide password recovery). 
+✅ Regularly update Cryptomator and your cloud storage security settings. 
+Expected Outcome: 
+✅ Files stored in the cloud are securely encrypted and unreadable without the correct password. 
+✅ Users can protect sensitive data from unauthorized access. 
+✅ The encryption process ensures data privacy even if cloud storage is compromised.
