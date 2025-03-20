@@ -1,0 +1,37 @@
+21.Securely Uploading, Sharing, and Managing Files in TeraBox Cloud
+Objective: Learn how to upload, organize, share, and manage files securely using TeraBox
+Cloud on Windows.
+Prerequisites:
+✅ Windows PC with an internet connection
+✅ TeraBox account (Sign up here)
+✅ TeraBox desktop app or web interface
+Experiment Steps
+Step 1: Install and Set Up TeraBox
+1. Download and install the TeraBox desktop app from the official website.
+2. Sign in to your TeraBox account or create a new account if needed.
+Step 2: Upload Files to TeraBox
+1. Open the TeraBox desktop app or log in via the web interface.
+2. Click on the Upload button.
+3. Select a file or folder from your computer.
+4. Wait for the upload process to complete.
+Step 3: Organizing Files
+1. Click on New Folder to create a folder.
+2. Drag and drop files into different folders to organize them.
+3. Use the rename, delete, and move options to manage files efficiently.
+Step 4: File Sharing and Permissions
+1. Select a file or folder you want to share.
+2. Click on the Share option.
+3. Choose Public Link or Password-Protected Link.
+4. Copy and send the link to others.
+Step 5: Downloading and Accessing Files Offline
+1. Open TeraBox and navigate to your uploaded files.
+2. Click Download to save files back to your local device.
+3. Check if the downloaded file matches the original to ensure data integrity.
+Testing and Verification
+✅ Verify if files are successfully uploaded and accessible from another device.
+✅ Test file sharing by opening the shared link in an incognito browser window.
+✅ Try downloading a file and compare its size and integrity with the original.
+Expected Outcome:
+✅ Successfully uploaded, organized, and shared files on TeraBox Cloud.
+✅ Verified file accessibility and download functionality.
+✅ Ensured data integrity of uploaded and downloaded files.
